@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+  width: 100%;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.container {
+  width: 280px;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 5px;
+  -ms-grid-columns: 50px 50px 50px auto;
+      grid-template-columns: 50px 50px 50px auto;
+  background-color: #303538;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.container .number,
+.container .operator,
+.container .equal,
+.container .output {
+  cursor: pointer;
+  background-color: #999999;
+  color: white;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 5px;
+}
+
+.container .equal,
+.container .output {
+  color: black;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.container .output {
+  background-color: #b5cfb1;
+  text-align: right;
+  padding-right: 5px;
+}
+
+.container .equal {
+  background-color: #d35d5d;
+}
+
+.container .operator {
+  background-color: #717072;
+}
+
+.container .number:hover {
+  background-color: #616060;
+}
+
+.container .operator:hover {
+  background-color: #9c9b9c;
+}
+
+.container .equal:hover {
+  background-color: #da3838;
+}
+/*# sourceMappingURL=style.css.map */
