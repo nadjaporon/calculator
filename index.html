@@ -13,31 +13,30 @@
 
 <body>
     <div class="content">
-        <div class="container">
-            <div class="output">
-                0
-            </div>
-            <div class="number">1</div>
-            <div class="number">2</div>
-            <div class="number">3</div>
-            <div class="operator">+</div>
+        <div class="container" id="digits">
+            <div class="output" id="output"></div>
 
-            <div class="number">4</div>
-            <div class="number">5</div>
-            <div class="number">6</div>
-            <div class="operator">-</div>
+            <div class="number" data-value="1">1</div>
+            <div class="number" data-value="2">2</div>
+            <div class="number" data-value="3">3</div>
+            <div class="operator" data-action="+">+</div>
 
-            <div class="number">7</div>
-            <div class="number">8</div>
-            <div class="number">9</div>
-            <div class="operator">x</div>
+            <div class="number" data-value="4">4</div>
+            <div class="number" data-value="5">5</div>
+            <div class="number" data-value="6">6</div>
+            <div class="operator" data-action="-">-</div>
 
-            <div class="number clear">AC</div>
-            <div class="number point">.</div>
-            <div class="number">0</div>
-            <div class="operator">/</div>
+            <div class="number" data-value="7">7</div>
+            <div class="number" data-value="8">8</div>
+            <div class="number" data-value="9">9</div>
+            <div class="operator" data-action="*">x</div>
 
-            <div class="equal">=</div>
+            <div class="number clear" data-action="clear">AC</div>
+            <div class="number point" data-action=".">.</div>
+            <div class="number" data-value="0">0</div>
+            <div class="operator" data-action="/">/</div>
+
+            <div class="equal" data-action="=">=</div>
         </div>
     </div>
     <script src="main.js"></script>
